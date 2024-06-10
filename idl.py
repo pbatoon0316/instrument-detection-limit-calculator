@@ -3,7 +3,7 @@ import pandas as pd
 from scipy.stats import t
 
 st.set_page_config(page_title='Instrument/Method Detection Limit Calculator',
-                   page_icon='t🔭', 
+                   page_icon='🔎', 
                    layout="centered")
 
 ###########
@@ -21,6 +21,7 @@ def normalize_data(input_values):
 ###########
 
 st.title('Instrument Detection Limit Calculator')
+st.caption('Created by Patrick Batoon - https://www.linkedin.com/in/pbatoon')
 
 input_values = st.text_area(label='Input Response (Signal Height/Area) :orange[_required_]', height=150)
 df = normalize_data(input_values)
